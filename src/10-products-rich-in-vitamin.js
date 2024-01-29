@@ -11,11 +11,8 @@ const getProductsRichInVitamin = () => {
     if (vitamins) {
       product.description = stockProducts[index].description;
       product.formattedPrice = `R$ ${stockProducts[index].price}`;
-      
       let vitaminsArray = Object.entries(vitamins).map(([name, number]) => `${name} - ${number}`);
-
       product.vitaminsInformation = vitaminsArray;
-
       richInVitamin.push(product);
     }
   }
