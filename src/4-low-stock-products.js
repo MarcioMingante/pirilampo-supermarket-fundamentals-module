@@ -1,15 +1,15 @@
 const stockProducts = require('./data.json');
 
 const getLowStockProducts = () => {
-  let lowStockProducts = [];
+  let lowInStock = [];
 
   for (let index = 0; index < stockProducts.length; index += 1) {
     if (stockProducts[index].quantityInStock > 0 && stockProducts[index].quantityInStock <= 10) {
-      lowStockProducts.push(`${stockProducts[index].productName}: ${stockProducts[index].quantityInStock} unidades`);
+      lowInStock.push(`${stockProducts[index].productName}: ${stockProducts[index].quantityInStock} unidades`);
     }
   }
 
-  return lowStockProducts;
+  return lowInStock;
 };
 
 module.exports = { getLowStockProducts };
