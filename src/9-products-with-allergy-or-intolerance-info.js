@@ -19,6 +19,4 @@ const getProductsWithAllergyOrIntoleranceInfo = () => {
   return productsWarning;
 };
 
-console.log(getProductsWithAllergyOrIntoleranceInfo());
-
 module.exports = { getProductsWithAllergyOrIntoleranceInfo };
