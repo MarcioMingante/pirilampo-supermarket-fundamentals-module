@@ -20,6 +20,4 @@ const getProductsOnSale = () => {
   return onSlae;
 };
 
-console.log(getProductsOnSale());
-
 module.exports = { getProductsOnSale };
